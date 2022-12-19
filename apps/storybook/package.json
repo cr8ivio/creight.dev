@@ -1,0 +1,36 @@
+{
+  "name": "@creight/storybook",
+  "version": "0.0.0",
+  "main": "index.js",
+  "author": "George Bockari <bitwhys@cr8iv.io>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@fontsource/cabin": "^4.5.9",
+    "@storybook/addon-actions": "^6.5.14",
+    "@storybook/addon-essentials": "^6.5.14",
+    "@storybook/addon-interactions": "^6.5.14",
+    "@storybook/addon-links": "^6.5.14",
+    "@storybook/builder-vite": "^0.2.6",
+    "@storybook/react": "^6.5.14",
+    "@storybook/testing-library": "^0.0.13",
+    "@vanilla-extract/css": "^1.9.2",
+    "@vanilla-extract/dynamic": "^2.0.3",
+    "@vanilla-extract/recipes": "^0.3.0",
+    "@vanilla-extract/vite-plugin": "^3.7.0",
+    "@vitejs/plugin-react": "^3.0.0",
+    "babel-loader": "^8.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tsconfig": "*",
+    "typescript": "^4.9.4",
+    "vite": "^4.0.2"
+  },
+  "dependencies": {
+    "@creight/ui": "*"
+  },
+  "scripts": {
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider start-storybook -p 6006",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider build-storybook"
+  }
+}
